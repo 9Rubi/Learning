@@ -7,6 +7,7 @@ package builder;
 public class Client {
     public static void main(String[] args) {
         AirShipBuilder builder = NoobAirShipBuilder.getInstance();
+
         AirShipDirector director = NoobAirShipDirector.getInstance(builder);
         Airship airship=director.directAirShip();
         System.out.println(airship);
