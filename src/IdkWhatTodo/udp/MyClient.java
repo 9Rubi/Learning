@@ -10,7 +10,7 @@ import java.net.*;
 public class MyClient {
     public static void main(String[] args) throws IOException {
         DatagramSocket client = new DatagramSocket(6666);
-        String msg = "fuckyou 杨炳强";
+        String msg = "fuckyou 的";
         byte[] data = msg.getBytes();
         DatagramPacket packet = new DatagramPacket(data, data.length, new InetSocketAddress("localhost",8888));
         client.send(packet);
