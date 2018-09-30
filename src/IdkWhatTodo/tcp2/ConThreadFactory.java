@@ -1,5 +1,6 @@
 package IdkWhatTodo.tcp2;
 
+import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
 /**
@@ -7,6 +8,7 @@ import java.util.concurrent.ThreadFactory;
  * @version : 2018-09-30 15:10
  */
 public class ConThreadFactory implements ThreadFactory {
+
     private static ThreadFactory instance=new ConThreadFactory();
     private ConThreadFactory(){
     }
@@ -16,7 +18,7 @@ public class ConThreadFactory implements ThreadFactory {
 
     @Override
     public Thread newThread(Runnable r) {
-        Thread thread = new Thread(r);
+        Thread thread=new Thread();
         return thread;
     }
 
