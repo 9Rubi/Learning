@@ -1,7 +1,5 @@
 package IdkWhatTodo.tcp2;
 
-import com.sun.istack.internal.NotNull;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
