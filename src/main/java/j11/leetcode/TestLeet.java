@@ -1,10 +1,8 @@
 package j11.leetcode;
 
-import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 /**
  * @author : Rubi
@@ -66,7 +64,6 @@ public class TestLeet {
         return dummyHead.next;
     }
 
-    @Test
     public void test1() {
 //        输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
         ListNode listNode1 = new ListNode(2);

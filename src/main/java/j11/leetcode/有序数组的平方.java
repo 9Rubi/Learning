@@ -1,5 +1,6 @@
 package j11.leetcode;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
@@ -43,7 +44,7 @@ public class 有序数组的平方 {
 
 
     public static int[] sortedSquares(int[] A) {
-        return IntStream.of(A).map(i -> i *= i).sorted().toArray();
+        return Arrays.stream(A).map(i -> i *= i).sorted().toArray();
     }
 
 
